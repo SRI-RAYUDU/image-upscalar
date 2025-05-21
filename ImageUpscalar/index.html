@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Upscaler</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Image Upscaler</h1>
+    <input type="file" id="imageInput" accept="image/png,image/jpeg"><br><br>
+
+    <label>Scale:
+      <select id="scaleSelect">
+        <option value="2">2x</option>
+        <option value="4">4x</option>
+      </select>
+    </label>
+    <button onclick="upscaleImage()">Upscale</button>
+
+    <div id="loader" class="loader" style="display: none;">Processing...</div>
+    <div id="outputImages" class="images"></div>
+  </div>
+
+  <script src="frontend.js"></script>
+</body>
+</html>
